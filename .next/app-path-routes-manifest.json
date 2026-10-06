@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/login/page": "/login",
+  "/page": "/",
+  "/(dashboard)/analytics/page": "/analytics",
+  "/(dashboard)/authorities/page": "/authorities",
+  "/(dashboard)/map/page": "/map",
+  "/(dashboard)/notifications/page": "/notifications",
+  "/(dashboard)/reports/page": "/reports",
+  "/(dashboard)/overview/page": "/overview"
+}
