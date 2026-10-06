@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #173B82;
+  --navy-2: #244A96;
+  --amber: #FFB900;
+  --steel: #4E74D8;
+}
+
+/* Tailwind v4 defaults borders/dividers to currentColor; keep them light grey. */
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-slate-200, #e2e8f0);
+  }
+}
+
+body { @apply bg-[#f2f4f8] text-slate-800 antialiased; }
+
+/* In a layer so utilities such as p-0 can override the default card padding. */
+@layer components {
+  .card { @apply bg-white rounded-2xl shadow-sm p-5; }
+  .card-title { @apply font-semibold text-slate-900; }
+  .badge { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-semibold; }
+}
+
+input:focus, select:focus { outline: 2px solid var(--steel); outline-offset: -2px; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #c6ccd8; border-radius: 8px; }
